@@ -71,8 +71,7 @@ export default defineConfig({
    * 
    * Set SITE_URL in your .env file (e.g., https://example.com)
    */
-  site: SITE_URL || 'https://SebastianG-code.github.io
-',
+  site: 'https://SebastianG-code.github.io',
   
   /**
    * Environment variables schema (Astro v5+)
@@ -88,8 +87,7 @@ export default defineConfig({
   env: {
     schema: {
       // Site configuration
-      SITE_URL: envField.string({ context: 'client', access: 'public', default: 'https://SebastianG-code.github.io
-' }),
+      SITE_URL: envField.string({ context: 'client', access: 'public', default: 'https://SebastianG-code.github.io' }),
       SITE_LANGUAGE: envField.string({ context: 'client', access: 'public', default: 'en' }),
       SITE_TITLE: envField.string({ context: 'client', access: 'public', default: 'Professional Portfolio' }),
       SITE_DESCRIPTION: envField.string({ context: 'client', access: 'public', default: 'Engineering leader specializing in system architecture, technical decision-making, and delivering measurable business impact.' }),
